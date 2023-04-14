@@ -1,0 +1,1 @@
+Busscar de Colombia requiere desarrollar una urna virtual para identificar la carrocería preferida por sus clientes, para realizar una campaña de mercadeo y asi poder incrementar las ventas. La urna debe permitir ver en tiempo real la cantidad de votos y el porcentaje de selección en cada tipo de carrocería.

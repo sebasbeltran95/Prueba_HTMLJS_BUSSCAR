@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/diseño.css">
+
+    <script src="js/funcionalidad.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="mayor">
+        <br>
+        <center> BUSSCAR DE COLOMBIA </center>
+        <br>
+        <div id="contenedor">
+            <div>
+                <input type="radio" id="busstar_dd" name="seleccionar" value="BUSSTAR DD">
+                <label>BUSSTAR DD</label><br>
+                <input type="radio" id="busstar_360" name="seleccionar" value="BUSSTAR 360">
+                <label>BUSSTAR 360</label><br>
+                <input type="radio" id="fusion_plus" name="seleccionar" value="FUSION PLUS">
+                <label>FUSION PLUS</label>
+            </div>
+            <div>
+                <label># VOTOS</label>
+                <br>
+                <input type="number" id="cantidad_votos">
+                <br>
+                <button onclick="" type="submit">Votar</button>
+            </div>
+        </div>
+        <br>
+        <div id="contenedor">
+            <div>
+                <label>BUSSTAR DD</label><br>
+                <label>BUSSTAR 360</label><br>
+                <label>FUSION PLUS</label>
+            </div>
+            <div>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-green w3-center" style="width:25%">25%</div>
+                </div>
+                    
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-green w3-center" style="width:25%">25%</div>
+                </div>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-green w3-center" style="width:25%">25%</div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <script>
+        function contarbusstar_dd(){
+            $('input[type="radio"]').change(function(){
+            let busstar_dd = $('#busstar_dd:checked').length;
+            $(".busstar_dd").html(busstar_dd);
+            });
+        }
+    </script>
+</body>
+</html>
